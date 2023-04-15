@@ -1,11 +1,11 @@
 .SH Name
-Simple Shell 
+Simple Shell
 
 .SYNOPSIS
 ./hsh
 
 .SH DESCRIPTION
-We have written a UNIX command line interpreter. It reads lines from the terminal, interprets them, and executes. The command will display a prompt and wait for the user to type a command. The command line will end with a new line. It will handle errors and the end of file condition. It will handle the PATH and fork() will be called if the command doesn't exist. We have implemented the built-ins; env and exit. 
+We have written a UNIX command line interpreter. It reads lines from the terminal, interprets them, and executes. The command will display a prompt and wait for the user to type a command. The command line will end with a new line. It will handle errors and the end of file condition. It will handle the PATH and fork() will be called if the command doesn't exist. We have implemented the built-ins; env and exit.
 
 .SH BUILT-INS
 .B ENV
@@ -13,7 +13,7 @@ We have written a UNIX command line interpreter. It reads lines from the termina
 
 .SH OPTIONS
 List of most used Commands in shell:
-cat - Prints ans concatenates files to the standard output. 
+cat - Prints ans concatenates files to the standard output.
 cp - Copies a file into another file.
 ls - Lists all files and directories in current working directory.
 pwd - Current working directory.
