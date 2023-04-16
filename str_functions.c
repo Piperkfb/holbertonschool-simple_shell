@@ -24,8 +24,9 @@ int _strcmp(char *name, char *variable, unsigned int length)
 		if (name[i] != variable[i])
 			return (1);
 		i++;
-		return (0);
 	}
+		return (0);
+	
 }
 /**
  * _strncmp - compares two strings
@@ -43,7 +44,9 @@ int _strncmp(char *name, char *variable, unsigned int length)
 	while (i < length)
 	{
 		if (name[i] != variable[i])
+		{
 			return (-1);
+		}
 		i++;
 	}
 	return (1);
@@ -60,7 +63,8 @@ char *_strcpy(char *dest, char *src)
 	int j = _strlen(src);
 
 	for (i = 0; i <= j; i++)
-		dest[i] = src[i];
+	{	dest[i] = src[i];
+	}
 
 		return (dest);
 }

@@ -34,9 +34,9 @@ char *_which(char *command, char *fullpath, char *path)
 			return (NULL);
 		}
 		_strcpy(fullpath, token);
-		fullpath[path_length] = "/";
+		fullpath[path_length] = '/';
 		_strcpy(fullpath + path_length+ 1, command);
-		fullpath[path_length + command_length + 1] = "\0";
+		fullpath[path_length + command_length + 1] = '\0';
 		if (access(fullpath, X_OK) != 0)
 		{
 			free(fullpath);

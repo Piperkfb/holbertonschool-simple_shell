@@ -13,9 +13,9 @@
 #define TRUE 1
 #define PROMPT "$ "
 
-#define MALLOC_ERR "Unable to malloc space\n"
-#define FORK_ERR "Unable to fork and create child process\n"
-#define PATH_ERR "No such file or directory\n"
+#define ERR_MALLOC "Unable to malloc space\n"
+#define ERR_FORK "Unable to fork and create child process\n"
+#define ERR_PATH "No such file or directory\n"
 
 extern char **environ;
 
