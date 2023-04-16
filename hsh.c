@@ -8,7 +8,7 @@ int main(void)
 {
 	char *line, *path, *fullpath;
 	char **tokens;
-	int flag, buit_status, child_status;
+	int flag, builtin_status, child_status;
 	struct stat buf;
 
 	while (TRUE)
@@ -23,7 +23,7 @@ int main(void)
 		tokens = tokenizer(line);
 		if (tokens[0] == NULL)
 			continue;
-		built_status = builtin_execute(tokens);
+		builtin_status = builtin_execute(tokens);
 		if (builtin_status == 0 || builtin_status == -1)
 		{
 			free(tokens);

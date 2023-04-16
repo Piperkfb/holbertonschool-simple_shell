@@ -16,14 +16,14 @@ int shell_exit(void)
 
 int shell_env(void)
 {
-	unsigned int cnt;
+	unsigned int i;
 
-	cnt = 0;
-	while (environ[cnt] != NULL)
+	i = 0;
+	while (environ[i] != NULL)
 	{
 		write(STDOUT_FILENO, environ[i], _strlen(environ[i]));
 		write(STDOUT_FILENO, "\n", 1);
-		cnt++;
+		i++;
 	}
 	return (0);
 }

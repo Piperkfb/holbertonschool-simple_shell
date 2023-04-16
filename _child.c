@@ -22,7 +22,7 @@ int child(char *fullpath, char **tokens)
 
 	if (child_pid == 0)
 	{
-		execve_status = execve(fullpath, toeksn, envp);
+		execve_status = execve(fullpath, tokens, envp);
 		if (execve_status == -1)
 			return (-1);
 	}

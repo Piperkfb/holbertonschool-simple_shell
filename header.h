@@ -26,8 +26,8 @@ extern char **environ;
  */
 typedef struct llist_s
 {
-       char *value;
-       struct llist_s *next;
+	char *value;
+	struct llist_s *next;
 } llist_s;
 
 /**
@@ -57,12 +57,12 @@ int shell_num_builtins(built_s builtin[]);
 
 /* Freeing functions */
 void free_all(char **tokens, char *path, char *line, char *fullpath, int flag);
-void free_dp(char **array, unsiged int lenth);
+void free_dp(char **array, unsigned int lenth);
 
 /* PATH related functions */
 char *_getenv(const char *name);
 char **copy_env(char **environ_copy, unsigned int environ_length);
-list_s *pathlist(char *variable, list_s *head);
+llist_s *pathlist(char *variable, llist_s *head);
 
 /* Others */
 void prompt(int fd, struct stat buf);
@@ -73,4 +73,3 @@ int child(char *fullpath, char **tokens);
 void errors(int error);
 
 #endif
-
