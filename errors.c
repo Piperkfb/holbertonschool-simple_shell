@@ -24,7 +24,7 @@ void errors(int error)
 
 	case 4: /* writes empty path error to stderr */
 		write(STDERR_FILENO, ERR_PATH, strlen(ERR_PATH));
-		beak;
+		break;
 
 	default:
 		return;
