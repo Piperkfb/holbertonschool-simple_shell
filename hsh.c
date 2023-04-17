@@ -1,8 +1,8 @@
 #include "header.h"
 
-/*
+/**
  * main - Runs a shell process
- * Return: 0 on success
+ * Return: `  on success
  */
 int main(void)
 {
