@@ -39,7 +39,7 @@ int builtin_execute(char **tokens)
  * shell_num_builtins - check num builtins
  * Description: A function to check the number of builtins
  * @builtin: takes he coutned builtin
- * @Return: nunm of builtins
+ * Return: nunm of builtins
  */
 
 int shell_num_builtins(built_s builtin[])

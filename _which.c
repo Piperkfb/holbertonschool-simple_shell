@@ -4,7 +4,7 @@
  * _which - searches directories in PATH
  * @command: command to search for
  * @fullpath: full path of command
- * @pathL full PATH variable
+ * @path: full PATH variable
  * Return: pointer to full path
  */
 char *_which(char *command, char *fullpath, char *path)
@@ -35,7 +35,7 @@ char *_which(char *command, char *fullpath, char *path)
 		}
 		_strcpy(fullpath, token);
 		fullpath[path_length] = '/';
-		_strcpy(fullpath + path_length+ 1, command);
+		_strcpy(fullpath + path_length + 1, command);
 		fullpath[path_length + command_length + 1] = '\0';
 		if (access(fullpath, X_OK) != 0)
 		{
@@ -43,7 +43,7 @@ char *_which(char *command, char *fullpath, char *path)
 			fullpath = NULL;
 			token = strtok(NULL, ":");
 		}
-		else 
+		else
 			break;
 	}
 	free(path_copy);

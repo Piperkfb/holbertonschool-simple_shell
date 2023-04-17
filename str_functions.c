@@ -26,7 +26,6 @@ int _strcmp(char *name, char *variable, unsigned int length)
 		i++;
 	}
 		return (0);
-	
 }
 /**
  * _strncmp - compares two strings
